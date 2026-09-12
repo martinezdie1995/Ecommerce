@@ -16,6 +16,6 @@ loginForm.addEventListener("submit", (event) => {
 
     localStorage.setItem("currentUser", JSON.stringify(user));
     localStorage.setItem("currentUserTimestamp", Date.now().toString());
-    window.location.href = "inicio.html";
+    window.location.href = "index.html";
 });
 

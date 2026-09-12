@@ -37,7 +37,7 @@ if (navActions && currentUser) {
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("currentUser");
     localStorage.removeItem("currentUserTimestamp");
-    window.location.href = "inicio.html";
+    window.location.href = "index.html";
   });
 
   navActions.prepend(welcomeMessage);
