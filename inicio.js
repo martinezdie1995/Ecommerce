@@ -57,11 +57,3 @@ document.querySelectorAll(".weekly-products-slider").forEach((weeklyProductsSlid
   weeklyProductsNext.addEventListener("click", () => moveWeeklyProducts(1));
 });
 
-const ingresarBtn = document.querySelector(".btn.btn-light");
-ingresarBtn.addEventListener("click", () => {
-  if(!localStorage.getItem("user")) {
-    window.location.href = "login.html";
-  }
-  window.location.href = "index.html";
-});
-
