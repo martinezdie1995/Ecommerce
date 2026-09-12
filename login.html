@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresar | ClickMarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span>ClickMarket</span>
+        </div>
+
+        <form class="search-form" role="search">
+          <input class="buscador" type="search" placeholder="Buscar producto, marca o categoría..." aria-label="Buscar producto, marca o categoría" />
+        </form>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./inicio.html#ofertas">Ofertas</a>
+          <a href="./inicio.html#categorias">Categorías</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-card">
+        <div class="auth-tabs">
+          <button class="tab active" type="button">Iniciar sesión</button>
+          <a class="tab" href="./registro.html">Crear cuenta</a>
+        </div>
+
+        <form class="auth-form active" aria-label="Formulario de inicio de sesión">
+          <div class="field-group">
+            <label for="emailLogin">Correo electrónico</label>
+            <input id="emailLogin" type="email" placeholder="ejemplo@correo.com" />
+          </div>
+
+          <div class="field-group">
+            <label for="passwordLogin">Contraseña</label>
+            <input id="passwordLogin" type="password" placeholder="Tu contraseña" />
+          </div>
+
+          <div class="row-inline">
+            <label class="checkbox-wrap">
+              <input type="checkbox" />
+              <span>Recordarme</span>
+            </label>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Iniciar sesión</button>
+        </form>
+
+      </section>
+    </main>
+
+      
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad.</p>
+        </div>
+
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class="nosotros" href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" />
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./login.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./carrito.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>

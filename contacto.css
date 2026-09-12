@@ -1,0 +1,152 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-info,
+.contact-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.04);
+  padding: 24px 22px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.contact-info ul {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  color: var(--muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-form .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contact-form .form-grid input,
+.contact-form .form-grid textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: #f9fafb;
+  color: var(--text);
+  outline: none;
+}
+
+.contact-form .form-grid .full {
+  grid-column: 1 / -1;
+}
+
+.claims-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 28px;
+  margin-top: 34px;
+  padding: 30px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.04);
+}
+
+.claims-heading h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.claims-heading > p:last-child {
+  color: var(--muted);
+}
+
+.claim-form {
+  display: grid;
+  gap: 18px;
+}
+
+.claim-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.claim-grid label {
+  display: grid;
+  gap: 7px;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.claim-grid input,
+.claim-grid select,
+.claim-grid textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: #f9fafb;
+  color: var(--text);
+  outline: none;
+  font-weight: 400;
+}
+
+.claim-grid input:focus,
+.claim-grid select:focus,
+.claim-grid textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(93, 95, 239, 0.14);
+}
+
+.claim-full {
+  grid-column: 1 / -1;
+}
+
+.claim-message {
+  min-height: 1.5rem;
+  color: #15803d;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .claims-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .claims-section {
+    padding: 22px 18px;
+  }
+
+  .claim-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .claim-full {
+    grid-column: auto;
+  }
+}

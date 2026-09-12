@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | ClickMarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./contacto.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span>ClickMarket</span>
+        </div>
+
+        <form class="search-form" role="search">
+          <input class="buscador" type="search" placeholder="Buscar producto, marca o categoría..." aria-label="Buscar producto, marca o categoría" />
+        </form>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./inicio.html#ofertas">Ofertas</a>
+          <a href="./inicio.html#categorias">Categorías</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+
+      
+      </div>
+    </header>
+
+    <main class="container page-shell contact-page">
+      <div class="breadcrumb">Inicio / Contacto</div>
+      <h1>Contactanos</h1>
+
+      <section class="contact-layout">
+        <div class="contact-info card-form">
+          <h3>Atención al cliente</h3>
+          <ul>
+            <li>📍 Av. Siempre Viva 123, CABA</li>
+            <li>📞 +54 11 5555 1234</li>
+            <li>✉️ martinezdeveloper@gmail.com</li>
+            <li>🕒 Lunes a viernes de 9 a 18 hs</li>
+          </ul>
+        </div>
+
+        <form class="contact-form card-form">
+          <div class="form-grid">
+            <input type="text" placeholder="Nombre" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Asunto" class="full" />
+            <textarea placeholder="Tu mensaje" class="full" rows="6"></textarea>
+          </div>
+          <button class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <section class="claims-section" id="reclamos" aria-labelledby="claims-title">
+        <div class="claims-heading">
+          <p class="eyebrow dark">Atención personalizada</p>
+          <h2 id="claims-title">¿Necesitás hacer un reclamo?</h2>
+          <p>Completá tus datos y contanos qué sucedió. Nuestro equipo revisará tu caso.</p>
+        </div>
+
+        <form class="claim-form" id="claimForm">
+          <div class="claim-grid">
+            <label>
+              Tipo de reclamo
+              <select name="tipo" id="claimType" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="envios">Envíos</option>
+                <option value="pagos">Pagos</option>
+                <option value="devoluciones">Devoluciones</option>
+                <option value="otro">Otro motivo</option>
+              </select>
+            </label>
+            <label>
+              Nombre completo
+              <input type="text" name="nombre" required autocomplete="name" />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              Teléfono
+              <input type="tel" name="telefono" required autocomplete="tel" />
+            </label>
+            <label class="claim-full">
+              Descripción del reclamo
+              <textarea name="descripcion" rows="6" required placeholder="Contanos con detalle qué ocurrió"></textarea>
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar reclamo</button>
+          <p class="claim-message" id="claimMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad.</p>
+        </div>
+
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class="nosotros" href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" />
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="contacto.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./carrito.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>

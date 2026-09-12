@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear cuenta | ClickMarket</title>
+    <meta
+      name="description"
+      content="Creá tu cuenta en ClickMarket y disfrutá una experiencia de compra personalizada."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./registro.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="./inicio.html" aria-label="Volver al inicio de ClickMarket">
+          <span>ClickMarket</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./inicio.html#ofertas">Ofertas</a>
+          <a href="./inicio.html#categorias">Categorías</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        
+      </div>
+    </header>
+
+    <main class="register-page">
+      <section class="register-layout container" aria-labelledby="register-title">
+        <div class="register-intro">
+          <h1 id="register-title">Todo lo que te gusta,<br /><strong>en un solo lugar.</strong></h1>
+          <p>Creá tu cuenta para guardar tus favoritos, recibir ofertas personalizadas y seguir tus pedidos sin perderte nada.</p>
+          <div class="register-perks" aria-label="Beneficios de crear una cuenta">
+            <div><span class="perk-icon">✦</span><span><strong>Favoritos siempre a mano</strong><small>Guardá productos para volver cuando quieras.</small></span></div>
+            <div><span class="perk-icon">↗</span><span><strong>Ofertas pensadas para vos</strong><small>Descubrí promociones según tus intereses.</small></span></div>
+            <div><span class="perk-icon">✓</span><span><strong>Seguimiento simple</strong><small>Consultá el estado de tus compras en segundos.</small></span></div>
+          </div>
+        </div>
+
+        <div class="register-card">
+          <div class="form-heading">
+            <p class="form-kicker">Empezá ahora</p>
+            <h2>Crear una cuenta</h2>
+            <p>Completá tus datos para disfrutar ClickMarket.</p>
+          </div>
+
+          <form id="registerForm" class="register-form" novalidate>
+            <div class="form-grid two-columns">
+              <div class="field-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Ej. Martina" required />
+              </div>
+              <div class="field-group">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" autocomplete="family-name" placeholder="Ej. García" required />
+              </div>
+            </div>
+
+            <div class="form-grid two-columns">
+              <div class="field-group">
+                <label for="region">Región</label>
+                <select id="region" name="region" required>
+                  <option value="" selected disabled>Seleccioná tu región</option>
+                  <option>Buenos Aires</option>
+                  <option>Centro</option>
+                  <option>Cuyo</option>
+                  <option>NEA</option>
+                  <option>NOA</option>
+                  <option>Patagonia</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input id="fechaNacimiento" name="fechaNacimiento" type="date" autocomplete="bday" required />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" required />
+            </div>
+
+            <div class="form-grid two-columns">
+              <div class="field-group">
+                <label for="usuario">Usuario</label>
+                <input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Elegí un usuario" minlength="4" required />
+              </div>
+              <div class="field-group">
+                <label for="telefono">Teléfono <span>(opcional)</span></label>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="11 1234 5678" />
+              </div>
+            </div>
+
+            <div class="form-grid two-columns">
+              <div class="field-group">
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Mínimo 8 caracteres" minlength="8" required />
+              </div>
+              <div class="field-group">
+                <label for="confirmPassword">Repetir contraseña</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Volvé a escribirla" required />
+              </div>
+            </div>
+
+            <label class="checkbox-wrap" for="terms">
+              <input id="terms" name="terms" type="checkbox" required />
+              <span>Acepto los términos y condiciones de ClickMarket.</span>
+            </label>
+
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary full-width">Crear mi cuenta <span aria-hidden="true">→</span></button>
+          </form>
+
+          <p class="login-prompt">¿Ya tenés una cuenta? <a href="./login.html">Ingresá acá</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad con estilo y confianza.</p>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class="nosotros" href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" aria-label="Correo para newsletter" />
+            <button class="btn btn-primary" type="button">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 ClickMarket</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </footer>
+
+    <script src="./registro.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./carrito.js"></script>
+  </body>
+</html>

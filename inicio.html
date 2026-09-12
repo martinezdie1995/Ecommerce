@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClickMarket | Tu tienda online</title>
+    <meta
+      name="description"
+      content="ClickMarket: tecnología, hogar, moda y accesorios con promociones exclusivas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="inicio.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span>ClickMarket</span>
+        </div>
+
+        <form class="search-form" role="search">
+          <input class="buscador" type="search" placeholder="Buscar producto, marca o categoría..." aria-label="Buscar producto, marca o categoría" />
+        </form>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#categorias">Categorías</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-light"><a href="./login.html">Ingresar</a></button>
+          <button class="btn btn-primary">Carrito </button>
+          <i data-lucide="user"></i>  
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slider">
+
+  <div class="slides">
+    <img src="pics/imagen 6.png" alt="imagen promocional 6">
+    <img src="pics/imagen 8.png" alt="imagen promocional 8">
+    <img src="pics/imagen 1.png" alt="imagen promocional 1">
+    <img src="pics/imagen 2.png" alt="imagen promocional 2">
+    <img src="pics/imagen 3.png" alt="imagen promocional 3">
+    <img src="pics/imagen 7.png" alt="imagen promocional 5">
+    <img src="pics/imagen 4.png" alt="imagen promocional 4">
+      <img src="pics/imagen 5.png" alt="imagen promocional 5">
+  </div>
+
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</div>
+
+  <section class="hero-support" aria-label="Información de ClickMarket">
+        <div class="hero-support-inner">
+          <p>Descubrí productos tecnológicos, hogar, moda y más con envío rápido, cuotas sin interés y promociones exclusivas para vos.</p>
+          <div class="hero-stats">
+            <div><strong>15k+</strong><span>Productos</span></div>
+            <div><strong>4.9/5</strong><span>Valoración</span></div>
+            <div><strong>24h</strong><span>Envío exprés</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-strip" id="ofertas">
+        <div class="container promo-inner">
+          <div>
+            <span>🚚 Envíos gratis</span>
+            <p>En compras mayores a $100.000</p>
+          </div>
+          <div>
+            <span>💳 Cuotas sin interés</span>
+            <p>Hasta 12 cuotas con tarjetas seleccionadas</p>
+          </div>
+          <div>
+            <span>🔒 Compra segura</span>
+            <p>Pago protegido y soporte online</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" id="inicio">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <div class="hero-product-labels" aria-label="Productos destacados">
+              <article class="hero-product-label featured-promo-card hero-product-console">
+                <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=700&q=85" alt="PlayStation 5" />
+                <div class="featured-promo-content"><span class="featured-promo-tag">Gaming</span><h1>PlayStation 5</h1><p>Viví tus juegos favoritos con una experiencia de nueva generación.</p><a class="featured-promo-link" href="#productos">Descubrir producto <span aria-hidden="true">→</span></a></div>
+              </article>
+              <article class="hero-product-label featured-promo-card hero-product-tv">
+                <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=700&q=85" alt="Televisor Smart TV" />
+                <div class="featured-promo-content"><span class="featured-promo-tag">Entretenimiento</span><h1>Smart TV</h1><p>Convertí cada película, serie y partido en una experiencia increíble.</p><a class="featured-promo-link" href="#productos">Ver producto <span aria-hidden="true">→</span></a></div>
+              </article>
+            </div>
+          </div>
+          </div>
+      </section>
+
+    
+
+      <section class="daily-offer container" aria-labelledby="daily-offer-title">
+        <div class="daily-offer-heading">
+          <p class="offer-card-title">Ofertas</p>
+          <p class="subtitulo-oferta">Oferta del día</p>
+        </div>
+        <div class="daily-offer-grid">
+          <article class="daily-offer-card">
+            <div class="daily-offer-image-wrap">
+              <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80" alt="Auriculares Bluetooth negros" />
+            </div>
+            <div class="daily-offer-content">
+              <p class="daily-offer-category">Tecnología · Audio</p>
+              <h2 id="daily-offer-title">Auriculares Bluetooth</h2>
+              <p class="daily-offer-description">Sonido envolvente y batería para todo el día.</p>
+              <span class="daily-offer-discount">30% OFF</span>
+              <div class="daily-offer-prices"><span class="daily-offer-original">$99.900</span><strong>$69.900</strong></div>
+              <p class="daily-offer-installments">6 cuotas de $11.650 sin interés</p>
+              <span class="daily-offer-shipping">✓ Envío gratis</span>
+            </div>
+          </article>
+
+          <article class="daily-offer-card">
+            <div class="daily-offer-image-wrap">
+
+              <img src="https://images.unsplash.com/photo-1671725779142-6f3b55f2d4ca?auto=format&fit=crop&w=900&q=80" alt="iPhone 14 Pro Max" />
+            </div>
+            <div class="daily-offer-content">
+              <p class="daily-offer-category">Tecnología · Apple</p>
+              <h2>iPhone 14 Pro Max</h2>
+              <p class="daily-offer-description">Potencia profesional con cámara avanzada.</p>
+              <span class="daily-offer-discount">13% OFF</span>
+              <div class="daily-offer-prices"><span class="daily-offer-original">$1.499.000</span><strong>$1.299.000</strong></div>
+              <p class="daily-offer-installments">12 cuotas de $108.250 sin interés</p>
+              <span class="daily-offer-shipping">✓ Envío gratis</span>
+            </div>
+          </article>
+
+          <article class="daily-offer-card">
+            <div class="daily-offer-image-wrap">
+
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Zapatillas running rojas" />
+            </div>
+            <div class="daily-offer-content">
+              <p class="daily-offer-category">Moda · Deportiva</p>
+              <h2>Zapatillas Running</h2>
+              <p class="daily-offer-description">Ligereza y amortiguación para cada recorrido.</p>
+              <span class="daily-offer-discount">25% OFF</span>
+              <div class="daily-offer-prices"><span class="daily-offer-original">$119.900</span><strong>$89.900</strong></div>
+              <p class="daily-offer-installments">6 cuotas de $14.983 sin interés</p>
+              <span class="daily-offer-shipping">✓ Envío gratis</span>
+            </div>
+          </article>
+
+          <article class="daily-offer-card">
+            <div class="daily-offer-image-wrap">
+
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Silla ergonómica" />
+            </div>
+            <div class="daily-offer-content">
+              <p class="daily-offer-category">Hogar · Oficina</p>
+              <h2>Silla Ergonómica</h2>
+              <p class="daily-offer-description">Comodidad y soporte para tu espacio de trabajo.</p>
+              <span class="daily-offer-discount">25% OFF</span>
+              <div class="daily-offer-prices"><span class="daily-offer-original">$199.900</span><strong>$149.900</strong></div>
+              <p class="daily-offer-installments">6 cuotas de $24.983 sin interés</p>
+              <span class="daily-offer-shipping">✓ Envío gratis</span>
+            </div>
+          </article>
+
+          <article class="daily-offer-card">
+            <div class="daily-offer-image-wrap">
+
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Smartwatch negro" />
+            </div>
+            <div class="daily-offer-content">
+              <p class="daily-offer-category">Tecnología · Wearables</p>
+              <h2>Smartwatch X</h2>
+              <p class="daily-offer-description">Actividad, notificaciones y estilo en tu muñeca.</p>
+              <span class="daily-offer-discount">21% OFF</span>
+              <div class="daily-offer-prices"><span class="daily-offer-original">$139.900</span><strong>$109.900</strong></div>
+              <p class="daily-offer-installments">6 cuotas de $18.316 sin interés</p>
+              <span class="daily-offer-shipping">✓ Envío gratis</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="categories container" id="categorias">
+        <div class="section-heading">
+          <p class="eyebrow dark">Explorá por categorías</p>
+          <h2>Lo que más compra la gente</h2>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card tech">
+            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=500&q=80" alt="Productos de tecnología" />
+            <h3>Tech</h3>
+            <p>Audio, laptops y accesorios</p>
+          </article>
+          <article class="category-card home">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=500&q=80" alt="Productos para el hogar" />
+            <h3>Hogar</h3>
+            <p>Decoración y bienestar</p>
+          </article>
+          <article class="category-card fashion">
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=500&q=80" alt="Ropa de moda" />
+            <h3>Moda</h3>
+            <p>Estilo y essentials diarios</p>
+          </article>
+          <article class="category-card beauty">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=500&q=80" alt="Productos de belleza" />
+            <h3>Beauty</h3>
+            <p>Cuidado personal y belleza</p>
+          </article>
+          <article class="category-card garden">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=500&q=80" alt="Herramientas de jardinería" />
+            <h3>Jardinería</h3>
+            <p>Plantas, macetas y herramientas</p>
+          </article>
+          <article class="category-card toys">
+            <img src="https://images.unsplash.com/photo-1594784053632-3e4a3f5b8e9a?auto=format&fit=crop&w=500&q=80" alt="Juguetes coloridos" />
+            <h3>Juguetes</h3>
+            <p>Diversión para todas las edades</p>
+          </article>
+          <article class="category-card footwear">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Zapatillas deportivas" />
+            <h3>Calzados</h3>
+            <p>Zapatillas, botas y sandalias</p>
+          </article>
+          <article class="category-card sports">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=500&q=80" alt="Persona corriendo con ropa deportiva" />
+            <h3>Deportes</h3>
+            <p>Todo para moverte mejor</p>
+          </article>
+          <article class="category-card tools">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=500&q=80" alt="Caja de herramientas" />
+            <h3>Herramientas</h3>
+            <p>Equipá tus proyectos</p>
+          </article>
+          <article class="category-card accessories">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80" alt="Anteojos de sol" />
+            <h3>Accesorios</h3>
+            <p>Detalles para completar tu look</p>
+          </article>
+          <article class="category-card books">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80" alt="Libros apilados" />
+            <h3>Libros</h3>
+            <p>Historias para descubrir</p>
+          </article>
+          <article class="category-card pets">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=500&q=80" alt="Perro con accesorios para mascotas" />
+            <h3>Mascotas</h3>
+            <p>Cuidado y diversión animal</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="weekly-products container" aria-labelledby="weekly-products-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Productos más vendidos</p>
+          <h2 id="weekly-products-title">Lo más vendido esta semana en jardinería</h2>
+        </div>
+
+        <div class="weekly-products-slider">
+          <button class="weekly-products-button weekly-products-prev" type="button" aria-label="Productos anteriores">‹</button>
+          <div class="weekly-products-track" aria-label="Productos de jardinería más vendidos">
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Set de herramientas de jardinería"><div class="product-info"><span class="weekly-product-category">Herramientas</span><h3>Set de Jardinería</h3><p>Kit completo para cuidar tus plantas.</p><div class="product-price-row"><strong>$28.900</strong><span>$36.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=700&q=80" alt="Planta de interior en maceta"><div class="product-info"><span class="weekly-product-category">Plantas</span><h3>Monstera Natural</h3><p>Planta de interior fácil de cuidar.</p><div class="product-price-row"><strong>$19.900</strong><span>$24.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=700&q=80" alt="Maceta de cerámica blanca"><div class="product-info"><span class="weekly-product-category">Macetas</span><h3>Maceta Cerámica</h3><p>Diseño minimalista para interior.</p><div class="product-price-row"><strong>$12.500</strong><span>$16.000</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1599685315640-8e9c6d2a4c5c?auto=format&fit=crop&w=700&q=80" alt="Regadera metálica para plantas"><div class="product-info"><span class="weekly-product-category">Riego</span><h3>Regadera Metálica</h3><p>Riego preciso con estilo clásico.</p><div class="product-price-row"><strong>$15.900</strong><span>$21.500</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=700&q=80" alt="Kit de semillas para huerta"><div class="product-info"><span class="weekly-product-category">Huerta</span><h3>Kit de Semillas</h3><p>Todo para comenzar tu huerta en casa.</p><div class="product-price-row"><strong>$8.900</strong><span>$11.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=700&q=80" alt="Tijera de podar profesional"><div class="product-info"><span class="weekly-product-category">Herramientas</span><h3>Tijera de Podar</h3><p>Corte limpio para ramas y arbustos.</p><div class="product-price-row"><strong>$10.900</strong><span>$14.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=700&q=80" alt="Fertilizante orgánico para plantas"><div class="product-info"><span class="weekly-product-category">Cuidado</span><h3>Fertilizante Orgánico</h3><p>Nutrientes naturales para tus plantas.</p><div class="product-price-row"><strong>$9.500</strong><span>$12.000</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=700&q=80" alt="Planta suculenta en maceta"><div class="product-info"><span class="weekly-product-category">Plantas</span><h3>Pack de Suculentas</h3><p>Tres variedades resistentes y decorativas.</p><div class="product-price-row"><strong>$14.900</strong><span>$19.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1597047084897-51e81819a499?auto=format&fit=crop&w=700&q=80" alt="Soporte de madera para plantas"><div class="product-info"><span class="weekly-product-category">Decoración</span><h3>Soporte de Madera</h3><p>Eleva tus plantas con un toque cálido.</p><div class="product-price-row"><strong>$22.900</strong><span>$29.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=700&q=80" alt="Tierra preparada para macetas"><div class="product-info"><span class="weekly-product-category">Sustratos</span><h3>Tierra Preparada</h3><p>Mezcla fértil para macetas y canteros.</p><div class="product-price-row"><strong>$7.900</strong><span>$10.500</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1599629954294-14df9d3f2f9f?auto=format&fit=crop&w=700&q=80" alt="Guantes para jardinería"><div class="product-info"><span class="weekly-product-category">Accesorios</span><h3>Guantes de Jardín</h3><p>Protección cómoda y resistente.</p><div class="product-price-row"><strong>$6.900</strong><span>$9.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=700&q=80" alt="Lámpara solar para jardín"><div class="product-info"><span class="weekly-product-category">Exterior</span><h3>Lámpara Solar</h3><p>Iluminá tus espacios sin cables.</p><div class="product-price-row"><strong>$18.900</strong><span>$25.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Compostera para jardín"><div class="product-info"><span class="weekly-product-category">Sustentable</span><h3>Compostera Hogareña</h3><p>Convertí tus residuos en abono.</p><div class="product-price-row"><strong>$32.900</strong><span>$39.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=700&q=80" alt="Abono para plantas"><div class="product-info"><span class="weekly-product-category">Cuidado</span><h3>Abono Premium</h3><p>Fórmula equilibrada para más floración.</p><div class="product-price-row"><strong>$11.900</strong><span>$15.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1597305873841-43c38055092e?auto=format&fit=crop&w=700&q=80" alt="Banco de jardín de madera"><div class="product-info"><span class="weekly-product-category">Muebles</span><h3>Banco de Jardín</h3><p>Un rincón cómodo para disfrutar afuera.</p><div class="product-price-row"><strong>$49.900</strong><span>$62.900</span></div></div></article>
+          <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=700&q=80" alt="Arco de jardín para plantas trepadoras"><div class="product-info"><span class="weekly-product-category">Exterior</span><h3>Arco para Trepadoras</h3><p>Decorá entradas y canteros con verde.</p><div class="product-price-row"><strong>$35.900</strong><span>$44.900</span></div></div></article>
+          </div>
+          <button class="weekly-products-button weekly-products-next" type="button" aria-label="Más productos">›</button>
+        </div>
+      </section>
+
+      <section class="weekly-products container" aria-labelledby="footwear-products-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Tendencias en calzados</p>
+          <h2 id="footwear-products-title">Lo más vendido esta semana en calzados</h2>
+        </div>
+        <div class="weekly-products-slider">
+          <button class="weekly-products-button weekly-products-prev" type="button" aria-label="Calzados anteriores">‹</button>
+          <div class="weekly-products-track" aria-label="Productos de calzados más vendidos">
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Zapatillas deportivas rojas"><div class="product-info"><span class="weekly-product-category">Deportivo</span><h3>Zapatillas Runner</h3><p>Amortiguación y comodidad diaria.</p><div class="product-price-row"><strong>$89.900</strong><span>$119.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Zapatos de taco negro"><div class="product-info"><span class="weekly-product-category">Mujer</span><h3>Tacos Urbanos</h3><p>Elegancia para cualquier ocasión.</p><div class="product-price-row"><strong>$64.900</strong><span>$79.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80" alt="Botas de cuero marrón"><div class="product-info"><span class="weekly-product-category">Botas</span><h3>Bota de Cuero</h3><p>Resistencia y estilo para el invierno.</p><div class="product-price-row"><strong>$109.900</strong><span>$139.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=700&q=80" alt="Zapatillas blancas casuales"><div class="product-info"><span class="weekly-product-category">Casual</span><h3>Urban White</h3><p>Un clásico versátil y liviano.</p><div class="product-price-row"><strong>$72.900</strong><span>$89.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=700&q=80" alt="Zapatillas urbanas negras"><div class="product-info"><span class="weekly-product-category">Urbano</span><h3>Street Black</h3><p>Diseño moderno para todos los días.</p><div class="product-price-row"><strong>$69.900</strong><span>$84.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=700&q=80" alt="Mocasines de cuero"><div class="product-info"><span class="weekly-product-category">Formal</span><h3>Mocasín Classic</h3><p>Comodidad con terminación premium.</p><div class="product-price-row"><strong>$84.900</strong><span>$104.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=700&q=80" alt="Sandalias de verano"><div class="product-info"><span class="weekly-product-category">Verano</span><h3>Sandalia Comfort</h3><p>Livianas y frescas para el verano.</p><div class="product-price-row"><strong>$39.900</strong><span>$49.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=700&q=80" alt="Zapatillas de entrenamiento grises"><div class="product-info"><span class="weekly-product-category">Fitness</span><h3>Training Pro</h3><p>Estabilidad para tus entrenamientos.</p><div class="product-price-row"><strong>$94.900</strong><span>$119.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="Alpargatas de lona"><div class="product-info"><span class="weekly-product-category">Relax</span><h3>Alpargata Lona</h3><p>Suaves, cómodas y fáciles de combinar.</p><div class="product-price-row"><strong>$29.900</strong><span>$38.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80" alt="Zapatillas deportivas azules"><div class="product-info"><span class="weekly-product-category">Running</span><h3>Run Air Blue</h3><p>Impulso y confort en cada paso.</p><div class="product-price-row"><strong>$99.900</strong><span>$129.900</span></div></div></article>
+          </div>
+          <button class="weekly-products-button weekly-products-next" type="button" aria-label="Más calzados">›</button>
+        </div>
+      </section>
+
+      <section class="weekly-products container" aria-labelledby="tools-products-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Para tus proyectos</p>
+          <h2 id="tools-products-title">Lo más vendido esta semana en herramientas</h2>
+        </div>
+        <div class="weekly-products-slider">
+          <button class="weekly-products-button weekly-products-prev" type="button" aria-label="Herramientas anteriores">‹</button>
+          <div class="weekly-products-track" aria-label="Herramientas más vendidas">
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=700&q=80" alt="Maletín de herramientas"><div class="product-info"><span class="weekly-product-category">Sets</span><h3>Maletín Pro</h3><p>Todo lo esencial para reparar en casa.</p><div class="product-price-row"><strong>$54.900</strong><span>$69.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=700&q=80" alt="Taladro eléctrico inalámbrico"><div class="product-info"><span class="weekly-product-category">Eléctricas</span><h3>Taladro Inalámbrico</h3><p>Potencia y libertad para trabajar.</p><div class="product-price-row"><strong>$89.900</strong><span>$109.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=700&q=80" alt="Llaves y herramientas manuales"><div class="product-info"><span class="weekly-product-category">Manuales</span><h3>Martillo</h3><p>Acero resistente para uso intensivo.</p><div class="product-price-row"><strong>$24.900</strong><span>$31.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1617571607645-dd7dd3bf7f6b?auto=format&fit=crop&w=700&q=80" alt="Sierra circular eléctrica"><div class="product-info"><span class="weekly-product-category">Eléctricas</span><h3>Sierra Circular</h3><p>Cortes precisos en madera y placas.</p><div class="product-price-row"><strong>$124.900</strong><span>$149.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=700&q=80" alt="Cinta métrica amarilla"><div class="product-info"><span class="weekly-product-category">Medición</span><h3>Cinta Métrica 8 m</h3><p>Mediciones rápidas y exactas.</p><div class="product-price-row"><strong>$8.900</strong><span>$12.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=700&q=80" alt="Caja organizadora de herramientas"><div class="product-info"><span class="weekly-product-category">Organización</span><h3>Caja Organizadora</h3><p>Ordená tus herramientas fácilmente.</p><div class="product-price-row"><strong>$19.900</strong><span>$26.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&fit=crop&w=700&q=80" alt="Martillo con mango de madera"><div class="product-info"><span class="weekly-product-category">Manuales</span><h3>Martillo Reforzado</h3><p>Golpe firme y mango ergonómico.</p><div class="product-price-row"><strong>$13.900</strong><span>$18.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=700&q=80" alt="Destornilladores de precisión"><div class="product-info"><span class="weekly-product-category">Precisión</span><h3>Destornilladores</h3><p>Juego completo para electrónica.</p><div class="product-price-row"><strong>$16.900</strong><span>$21.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=700&q=80" alt="Pinza multipropósito"><div class="product-info"><span class="weekly-product-category">Manuales</span><h3>Pinza Multiuso</h3><p>Corta, ajusta y sostiene con precisión.</p><div class="product-price-row"><strong>$11.900</strong><span>$15.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=700&q=80" alt="Nivel de burbuja profesional"><div class="product-info"><span class="weekly-product-category">Medición</span><h3>Nivel Profesional</h3><p>Resultados precisos en cada proyecto.</p><div class="product-price-row"><strong>$17.900</strong><span>$23.900</span></div></div></article>
+          </div>
+          <button class="weekly-products-button weekly-products-next" type="button" aria-label="Más herramientas">›</button>
+        </div>
+      </section>
+
+      <section class="featured-promos container" aria-labelledby="featured-promos-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Elegidos para vos</p>
+          <h2 id="featured-promos-title">Promociones que vale la pena descubrir</h2>
+        </div>
+
+        <div class="featured-promos-grid">
+          <article class="featured-promo-card featured-promo-a">
+            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80" alt="Auriculares Bluetooth negros" />
+            <div class="featured-promo-content">
+              <span class="featured-promo-tag">Tecnología</span>
+              <h3>Sonido que te acompaña</h3>
+              <p>Disfrutá tus playlists con auriculares inalámbricos y toda la libertad que necesitás.</p>
+              <a class="featured-promo-link" href="#productos">Descubrir producto <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="featured-promo-card featured-promo-b">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=80" alt="Taladro inalámbrico y herramientas" />
+            <div class="featured-promo-content">
+              <span class="featured-promo-tag">Herramientas</span>
+              <h3>Manos a la obra</h3>
+              <p>Encontrá herramientas confiables para transformar tus ideas en proyectos reales.</p>
+              <a class="featured-promo-link" href="#productos">Ver colección <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="weekly-products container" aria-labelledby="toys-products-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Diversión para todas las edades</p>
+          <h2 id="toys-products-title">Lo más vendido esta semana en juguetes</h2>
+        </div>
+        <div class="weekly-products-slider">
+          <button class="weekly-products-button weekly-products-prev" type="button" aria-label="Juguetes anteriores">‹</button>
+          <div class="weekly-products-track" aria-label="Juguetes más vendidos">
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1594784053632-3e4a3f5b8e9a?auto=format&fit=crop&w=700&q=80" alt="Bloques de construcción coloridos"><div class="product-info"><span class="weekly-product-category">Construcción</span><h3>Bloques Creativos</h3><p>Imaginación sin límites para construir.</p><div class="product-price-row"><strong>$24.900</strong><span>$31.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?auto=format&fit=crop&w=700&q=80" alt="Oso de peluche marrón"><div class="product-info"><span class="weekly-product-category">Peluche</span><h3>Oso Abrazable</h3><p>El compañero ideal para cada aventura.</p><div class="product-price-row"><strong>$18.900</strong><span>$24.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=700&q=80" alt="Muñeca con vestido rosa"><div class="product-info"><span class="weekly-product-category">Muñecas</span><h3>Muñeca Aventuras</h3><p>Historias nuevas para jugar cada día.</p><div class="product-price-row"><strong>$29.900</strong><span>$38.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" alt="Consola de videojuegos retro"><div class="product-info"><span class="weekly-product-category">Videojuegos</span><h3>Consola Retro</h3><p>Los clásicos que nunca pasan de moda.</p><div class="product-price-row"><strong>$69.900</strong><span>$89.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1560961911-ba7ef651a56c?auto=format&fit=crop&w=700&q=80" alt="Rompecabezas de paisaje"><div class="product-info"><span class="weekly-product-category">Ingenio</span><h3>Rompecabezas 1000</h3><p>Un desafío para compartir en familia.</p><div class="product-price-row"><strong>$16.900</strong><span>$21.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=700&q=80" alt="Pelota de fútbol"><div class="product-info"><span class="weekly-product-category">Deportes</span><h3>Pelota Champion</h3><p>Lista para jugar en cualquier cancha.</p><div class="product-price-row"><strong>$21.900</strong><span>$28.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=700&q=80" alt="Auto de juguete rojo"><div class="product-info"><span class="weekly-product-category">Vehículos</span><h3>Auto Turbo</h3><p>Velocidad y acción en cada carrera.</p><div class="product-price-row"><strong>$14.900</strong><span>$19.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?auto=format&fit=crop&w=700&q=80" alt="Juego de cocina infantil"><div class="product-info"><span class="weekly-product-category">Imitación</span><h3>Cocina Mini Chef</h3><p>Jugá a cocinar con accesorios seguros.</p><div class="product-price-row"><strong>$44.900</strong><span>$57.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1599629954294-14df9d3f2f9f?auto=format&fit=crop&w=700&q=80" alt="Kit de pinturas para niños"><div class="product-info"><span class="weekly-product-category">Arte</span><h3>Kit Pequeño Artista</h3><p>Colores y creatividad para expresarse.</p><div class="product-price-row"><strong>$19.900</strong><span>$25.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=700&q=80" alt="Set de figuras de animales"><div class="product-info"><span class="weekly-product-category">Figuras</span><h3>Safari en Miniatura</h3><p>Descubrí el mundo jugando.</p><div class="product-price-row"><strong>$22.900</strong><span>$29.900</span></div></div></article>
+          </div>
+          <button class="weekly-products-button weekly-products-next" type="button" aria-label="Más juguetes">›</button>
+        </div>
+      </section>
+
+      <section class="weekly-products container" aria-labelledby="tech-products-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Innovación para todos los días</p>
+          <h2 id="tech-products-title">Lo más vendido esta semana en tech</h2>
+        </div>
+        <div class="weekly-products-slider">
+          <button class="weekly-products-button weekly-products-prev" type="button" aria-label="Productos tech anteriores">‹</button>
+          <div class="weekly-products-track" aria-label="Productos tech más vendidos">
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=700&q=80" alt="Auriculares inalámbricos"><div class="product-info"><span class="weekly-product-category">Audio</span><h3>SoundMax Air</h3><p>Sonido claro y batería duradera.</p><div class="product-price-row"><strong>$69.900</strong><span>$89.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Reloj inteligente negro"><div class="product-info"><span class="weekly-product-category">Wearables</span><h3>Smartwatch X</h3><p>Tu actividad y notificaciones a mano.</p><div class="product-price-row"><strong>$109.900</strong><span>$139.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80" alt="Notebook plateada"><div class="product-info"><span class="weekly-product-category">Computación</span><h3>Notebook Air</h3><p>Rendimiento liviano para trabajar.</p><div class="product-price-row"><strong>$899.900</strong><span>$1.099.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=80" alt="Tablet moderna"><div class="product-info"><span class="weekly-product-category">Tablets</span><h3>Tablet View 10</h3><p>Pantalla amplia para estudiar y crear.</p><div class="product-price-row"><strong>$229.900</strong><span>$279.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=700&q=80" alt="Celular inteligente"><div class="product-info"><span class="weekly-product-category">Smartphones</span><h3>Nova Phone</h3><p>Cámara y potencia para todos los días.</p><div class="product-price-row"><strong>$349.900</strong><span>$419.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80" alt="Teclado mecánico retroiluminado"><div class="product-info"><span class="weekly-product-category">Accesorios</span><h3>Teclado Mecánico</h3><p>Precisión y comodidad para escribir.</p><div class="product-price-row"><strong>$54.900</strong><span>$69.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80" alt="Mouse inalámbrico negro"><div class="product-info"><span class="weekly-product-category">Accesorios</span><h3>Mouse Silent Pro</h3><p>Control preciso y silencioso.</p><div class="product-price-row"><strong>$24.900</strong><span>$31.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="Notebook para trabajo"><div class="product-info"><span class="weekly-product-category">Computación</span><h3>Notebook Work</h3><p>Productividad y batería para tu jornada.</p><div class="product-price-row"><strong>$699.900</strong><span>$849.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1601944177325-f8867652837f?auto=format&fit=crop&w=700&q=80" alt="Monitor de computadora"><div class="product-info"><span class="weekly-product-category">Monitores</span><h3>Monitor UltraView</h3><p>Más espacio para trabajar y jugar.</p><div class="product-price-row"><strong>$249.900</strong><span>$319.900</span></div></div></article>
+            <article class="weekly-product-card"><img src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?auto=format&fit=crop&w=700&q=80" alt="Parlante portátil"><div class="product-info"><span class="weekly-product-category">Audio</span><h3>Parlante Beat</h3><p>Música potente donde quieras.</p><div class="product-price-row"><strong>$39.900</strong><span>$52.900</span></div></div></article>
+          </div>
+          <button class="weekly-products-button weekly-products-next" type="button" aria-label="Más productos tech">›</button>
+        </div>
+      </section>
+
+      <section class="featured-promos container" aria-labelledby="more-promos-title">
+        <div class="section-heading">
+          <p class="eyebrow dark">Nuevos favoritos</p>
+          <h2 id="more-promos-title">Detalles que transforman tu estilo y tu espacio</h2>
+        </div>
+
+        <div class="featured-promos-grid">
+          <article class="featured-promo-card featured-promo-glasses">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=80" alt="Anteojos de sol modernos" />
+            <div class="featured-promo-content">
+              <span class="featured-promo-tag">Accesorios</span>
+              <h3>Tu look, tu actitud</h3>
+              <p>Sumá anteojos con diseño y personalidad para completar cada salida.</p>
+              <a class="featured-promo-link" href="#productos">Ver anteojos <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="featured-promo-card featured-promo-plants">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=80" alt="Plantas verdes de interior" />
+            <div class="featured-promo-content">
+              <span class="featured-promo-tag">Hogar</span>
+              <h3>Más vida en cada rincón</h3>
+              <p>Elegí plantas y macetas que llenan tu casa de frescura y color.</p>
+              <a class="featured-promo-link" href="#productos">Explorar plantas <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits container">
+        <div class="section-heading">
+          <p class="eyebrow dark">¿Por qué elegirnos?</p>
+          <h2>Compras con confianza</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <article>
+            <div class="icon">⚡</div>
+            <h3>Entrega rápida</h3>
+            <p>Recibí tu pedido en tiempo récord con seguimiento en vivo.</p>
+          </article>
+          <article>
+            <div class="icon">🛡️</div>
+            <h3>Pago seguro</h3>
+            <p>Protegemos cada compra con tecnología y atención personalizada.</p>
+          </article>
+          <article>
+            <div class="icon">🔁</div>
+            <h3>Devoluciones</h3>
+            <p>Si no te gusta, te ayudamos con cambios y devoluciones sencillas.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad con estilo y confianza.</p>
+        </div>
+
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class ="nosotros" href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" />
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="currentYear">2026</span> ClickMarket</span>
+        <span>Todos los derechos reservados</span>
+      </div>
+    </footer>
+
+    <script src="./productos-data.js"></script>
+    <script src="./inicio.js"></script>
+    <script src="./inicio-interactions.js"></script>
+    <script src="./carrito.js"></script>
+    <script src="./auth.js"></script>
+    <script>
+import { createIcons, User } from 'lucide';
+
+createIcons({
+  icons: {
+    User
+  }
+});
+</script>
+
+  </body>
+</html>

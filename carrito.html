@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito | ClickMarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./carrito.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span>ClickMarket</span>
+        </div>
+
+        <form class="search-form" role="search">
+          <input class="buscador" type="search" placeholder="Buscar producto, marca o categoría..." aria-label="Buscar producto, marca o categoría" />
+        </form>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./inicio.html#ofertas">Ofertas</a>
+          <a href="./inicio.html#categorias">Categorías</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-light">Ingresar</button>
+          <button class="btn btn-primary" type="button">Carrito (0)</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-shell cart-page">
+      <div class="page-header">
+        <div>
+          <div class="breadcrumb">Inicio / Carrito</div>
+          <h1>Tu carrito</h1>
+        </div>
+      </div>
+
+      <section class="cart-layout">
+        <div class="cart-items" aria-live="polite"></div>
+
+        <aside class="summary-card">
+          <h3>Resumen</h3>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">$0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Envío</span>
+            <strong id="cartShipping">$0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Descuento</span>
+            <strong id="cartDiscount">-$0</strong>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <strong id="cartTotal">$0</strong>
+          </div>
+          <button class="btn btn-primary full-width" id="checkoutButton" type="button">Ir al checkout</button>
+          <button class="btn btn-light full-width" id="continueShoppingButton" type="button">Seguir comprando</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad.</p>
+        </div>
+
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class="nosotros" href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" />
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./productos-data.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./carrito.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>

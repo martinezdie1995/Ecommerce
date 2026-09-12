@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | ClickMarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="productos.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span>ClickMarket</span>
+        </div>
+
+        <form class="search-form" role="search">
+          <input class="buscador" type="search" placeholder="Buscar producto, marca o categoría..." aria-label="Buscar producto, marca o categoría" />
+        </form>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./productos.html">Productos</a>
+          <a href="./inicio.html#ofertas">Ofertas</a>
+          <a href="./inicio.html#categorias">Categorías</a>
+          <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-light">Ingresar</button>
+          <button class="btn btn-primary">Carrito </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="page-header">
+        <div>
+          <div class="breadcrumb">Inicio / Productos</div>
+          <h1>Productos</h1>
+        </div>
+        <div class="result-summary">Mostrando 1-12 de 148 productos</div>
+      </div>
+
+      <section class="catalog-layout">
+        <aside class="filters-card">
+          <h3>Filtrar por</h3>
+
+          <div class="filter-group">
+            <label>Categoría</label>
+            <ul>
+              <li><a href="#" data-category="tecnologia">Tecnología</a></li>
+              <li><a href="#" data-category="hogar">Hogar</a></li>
+              <li><a href="#" data-category="moda">Moda</a></li>
+              <li><a href="#" data-category="belleza">Belleza</a></li>
+              <li><a href="#" data-category="jardineria">Jardinería</a></li>
+              <li><a href="#" data-category="juguetes">Juguetes</a></li>
+              <li><a href="#" data-category="calzados">Calzados</a></li>
+              <li><a href="#" data-category="deportes">Deportes</a></li>
+              <li><a href="#" data-category="herramientas">Herramientas</a></li>
+              <li><a href="#" data-category="accesorios">Accesorios</a></li>
+              <li><a href="#" data-category="libros">Libros</a></li>
+              <li><a href="#" data-category="mascotas">Mascotas</a></li>
+            </ul>
+          </div>
+
+          <div class="filter-group">
+            <label>Precio</label>
+            <div class="range-tags">
+              <button type="button" data-min-price="0" data-max-price="50000">$0 - $50k</button>
+              <button type="button" data-min-price="50000" data-max-price="150000">$50k - $150k</button>
+              <button type="button" data-min-price="150000">$150k+</button>
+            </div>
+          </div>
+
+      
+        </aside>
+
+        <div class="catalog-products">
+          <div class="sort-bar">
+            <span>Ordenar por:</span>
+            <select aria-label="Ordenar productos">
+              <option value="relevance">Relevancia</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="newest">Más nuevos</option>
+            </select>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="badge">Nuevo</span>
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Smartphone" />
+              <div class="product-info">
+                <h3>iPhone 14 Pro</h3>
+                <p>Apple · 256GB</p>
+                <div class="product-price-row">
+                  <strong>$1.299.000</strong>
+                  <span>$1.499.000</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge sale">-20%</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Zapatillas" />
+              <div class="product-info">
+                <h3>Zapatillas Run</h3>
+                <p>Moda · Deportiva</p>
+                <div class="product-price-row">
+                  <strong>$79.900</strong>
+                  <span>$99.900</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge">Top</span>
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Silla" />
+              <div class="product-info">
+                <h3>Silla Ergonómica</h3>
+                <p>Hogar · Oficina</p>
+                <div class="product-price-row">
+                  <strong>$149.900</strong>
+                  <span>$199.900</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge sale">-15%</span>
+              <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80" alt="Auriculares" />
+              <div class="product-info">
+                <h3>Auriculares Pro</h3>
+                <p>Tech · Audio</p>
+                <div class="product-price-row">
+                  <strong>$67.900</strong>
+                  <span>$79.900</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge">Oferta</span>
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Cocina" />
+              <div class="product-info">
+                <h3>Set de Cocina</h3>
+                <p>Hogar · Cocina</p>
+                <div class="product-price-row">
+                  <strong>$189.900</strong>
+                  <span>$220.000</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge">Nuevo</span>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Reloj" />
+              <div class="product-info">
+                <h3>Smartwatch X</h3>
+                <p>Tech · Fitness</p>
+                <div class="product-price-row">
+                  <strong>$109.900</strong>
+                  <span>$139.900</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge sale">-10%</span>
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Campera" />
+              <div class="product-info">
+                <h3>Campera Urbana</h3>
+                <p>Moda · Invierno</p>
+                <div class="product-price-row">
+                  <strong>$92.000</strong>
+                  <span>$102.000</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge">Popular</span>
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Perfume" />
+              <div class="product-info">
+                <h3>Fragancia Elite</h3>
+                <p>Belleza · Perfumes</p>
+                <div class="product-price-row">
+                  <strong>$45.900</strong>
+                  <span>$59.900</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="catalog-load-more">
+        <a href="#" class="btn btn-primary full-width">Cargar más productos</a>
+      </div>
+    </main>
+
+    <footer class="footer catalog-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span>ClickMarket</span>
+          </div>
+          <p>Tu tienda online para descubrir productos de calidad.</p>
+        </div>
+
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="./contacto.html?tipo=envios#reclamos">Envíos</a></li>
+            <li><a href="./contacto.html?tipo=pagos#reclamos">Pagos</a></li>
+            <li><a href="./contacto.html?tipo=devoluciones#reclamos">Devoluciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Compañía</h4>
+          <ul>
+            <li><a class="nosotros" href="./nosotros.html">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabajá con nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <div class="newsletter">
+            <input type="email" placeholder="Tu correo" />
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./productos-data.js"></script>
+    <script src="./productos.js"></script>
+    <script src="./auth.js"></script>
+    <script src="./carrito.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>

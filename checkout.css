@@ -1,0 +1,92 @@
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) 360px;
+  gap: 28px;
+  align-items: start;
+}
+
+.card-form {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.04);
+  padding: 24px 22px;
+}
+
+.form-section + .form-section {
+  margin-top: 22px;
+}
+
+.form-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: #f9fafb;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(93, 95, 239, 0.14);
+}
+
+.form-grid input:invalid:not(:placeholder-shown) {
+  border-color: #dc2626;
+}
+
+.checkout-message {
+  min-height: 1.5rem;
+  margin-top: 14px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.checkout-message.success {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.form-grid .full {
+  grid-column: 1 / -1;
+}
+
+.payment-options {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.payment-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 980px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
